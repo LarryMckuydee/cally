@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "members")
-public class Member {
+public class Member implements Serializable {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
